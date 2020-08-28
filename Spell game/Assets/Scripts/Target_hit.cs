@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class Target_hit : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    #region Variables
+    public ParticleSystem explode;
+    private IEnumerator coroutine;
+    #endregion
 
-    // Update is called once per frame
-    void Update()
+    #region Util Methods
+    IEnumerator RespawnTarget(float time)
     {
-        
+        Instantiate(explode, transform);
+        GetComponent<MeshRenderer>().enabled = false;
+        yield return new WaitForSeconds(time);
+        GetComponent<MeshRenderer>().enabled = true;
     }
+    #endregion
+
+    #region Main Methods
+    private void OnTriggerEnter(Collider other)
+    {
+        coroutine = RespawnTarget(2.0f);
+        if (!other.CompareTag("Player"))
+        {
+            Destroy(other.gameObject);
+        }
+        StartCoroutine(coroutine);
+    }
+    #endregion
 }

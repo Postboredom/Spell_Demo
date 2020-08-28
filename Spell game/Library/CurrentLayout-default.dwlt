@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,10 +120,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 709, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 708, y: 492}
+  m_MaxSize: {x: 18003, y: 14042}
   vertical: 0
-  controlID: 30073
+  controlID: 178
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 30126
+  controlID: 77
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 292}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 30074
+  controlID: 179
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -425,9 +425,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 46430000
+      m_SelectedIDs: 34450000
       m_LastClickedID: 0
-      m_ExpandedIDs: 166cfdff8eebfdff90f9ffff5cfbffffd0460000f24600000047000004470000084700000c4700003a4700003e470000
+      m_ExpandedIDs: 5efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -487,9 +487,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.5799999, y: 5.36, z: -4.52}
+    m_Target: {x: -0.014705062, y: 3.4810004, z: 2.8367481}
     speed: 2
-    m_Value: {x: -0.5799999, y: 5.36, z: -4.52}
+    m_Value: {x: -0.014705062, y: 3.4810004, z: 2.8367481}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -538,11 +538,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.012126264, y: 0.9861158, z: -0.08333443, w: 0.14329098}
     speed: 2
-    m_Value: {x: 0.012125971, y: 0.986092, z: -0.08333241, w: 0.14328751}
+    m_Value: {x: 0.012126264, y: 0.9861159, z: -0.08333443, w: 0.14329098}
   m_Size:
-    m_Target: 4.326473
+    m_Target: 1.31264
     speed: 2
-    m_Value: 4.326473
+    m_Value: 1.31264
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -656,21 +656,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\noah1\Documents\GitHub\Test_Area\Spell game
+  m_LastProjectPath: C:\Users\noah1\Documents\GitHub\Spell_Demo\Spell game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 68}
-    m_SelectedIDs: 46430000
-    m_LastClickedID: 17222
-    m_ExpandedIDs: 00000000904000003e430000e4440000c645000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 96400000
+    m_LastClickedID: 16534
+    m_ExpandedIDs: 0000000096400000b8440000cc440000ce44000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -698,7 +698,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009040000000ca9a3b
+    m_ExpandedIDs: 0000000096400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -725,7 +725,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000724600005c54000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -829,7 +829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c262c1329a02fa49b5cb4c297106f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 133, y: 30}
+  m_MinSize: {x: 129, y: 28}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: ProBuilder
