@@ -71,27 +71,14 @@ public class Char_Move : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   // Exit Sample  
-      /*  if (Input.GetKey(KeyCode.Escape))
+    {
+        if (Cursor.lockState == CursorLockMode.Locked)
         {
-            Application.Quit();
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #endif
+            currentRotation.x += Input.GetAxis("Mouse X") * sensitivity;
+            currentRotation.x = Mathf.Repeat(currentRotation.x, 360);
+            this.transform.rotation = Quaternion.Euler(0, currentRotation.x, 0);
+            this.transform.position += (speed * GetInputTranslationDirection() * Time.deltaTime);
         }
-        */
-
-        // Hide and lock cursor when right mouse button pressed
-        if (Input.GetMouseButtonDown(1))
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-        currentRotation.x += Input.GetAxis("Mouse X") * sensitivity;
-        currentRotation.x = Mathf.Repeat(currentRotation.x, 360);
-        this.transform.rotation = Quaternion.Euler(0, currentRotation.x, 0);
-        this.transform.position += (speed * GetInputTranslationDirection() * Time.deltaTime);
-        
-
     }
     #endregion
 }
