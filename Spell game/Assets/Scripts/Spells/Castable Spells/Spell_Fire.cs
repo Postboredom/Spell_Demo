@@ -6,9 +6,10 @@ using UnityEngine.VFX;
 public class Spell_Fire : MonoBehaviour
 {
     #region Variables
-    public ParticleSystem[] effects;
+    public GameObject[] effects;
 
     public GameObject shot;
+
     #endregion
 
     #region Util Methods
@@ -16,7 +17,9 @@ public class Spell_Fire : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            ParticleSystem effect = Instantiate(effects[0], shot.transform);
+            GameObject effect = Instantiate(effects[Random.Range(0,effects.Length)], shot.transform);
+            effect.GetComponent<RFX4_EffectSettings>().UseCustomColor = true;
+            effect.GetComponent<RFX4_EffectSettings>().EffectColor = Color.green;
             effect.transform.parent = GameObject.Find("====Spells====").transform;
         }
     }
